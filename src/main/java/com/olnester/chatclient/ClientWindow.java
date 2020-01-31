@@ -8,11 +8,12 @@ import java.io.IOException;
 
 public class ClientWindow extends JFrame implements ActionListener, TCPConnectionListener {
 
-    private static final String IP_ADDR = "176.36.119.245";
+    private static final String IP_ADDR = ProjectProperty.getProperty("ip.address");
+
     private static final int PORT = 8189;
 
     private static final int WIDTH = 600;
-    private static final int HEIGHT = 400;
+    private static final int  HEIGHT = 400;
 
 
     public static void main(String[] args) {
